@@ -1,10 +1,23 @@
+git init
+git branch -M main
+git add .
+ git commit -m "comment"
+ git remote add origin 
+ git remote add origin https://github.com/abhisheksinghmahara/namaste-react.git
+git push -u origin main
+git remote add origin https://github.com/abhisheksinghmahara/namaste-react.git
+git branch -M main
+git push -u origin main
+
 npm init --> package.json
 npm install -D parcel- node module, package.lock.json
 npx parcel index.html- dist, .parcel-cache
+npm install react
+npm install react-dom
 
 #if we have our package.json and package.lock.json we can regenrate all the necessary modules{command --> npm install}
 caret ^ and tilde ~    ==> caret upgrades only upto the minor versions of upgrades wheather tilde upgrades it up to the major versions. So there is better to keep caret before verion description so that it may cause problems when major updates were been installed.
-
+https://github.com/abhisheksinghmahara/namaste-react
 $Igniting app ---> npx parcel index.html
 # package.json file is a configuration for npm (a package manager not node package manager)
 #package.lock.json file is a configuration for npm whick keeps track of the exact version of the packages which are been installed because of caret ^ or tilde is there.
