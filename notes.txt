@@ -1,0 +1,63 @@
+npm init --> package.json
+npm install -D parcel- node module, package.lock.json
+npx parcel index.html- dist, .parcel-cache
+
+#if we have our package.json and package.lock.json we can regenrate all the necessary modules{command --> npm install}
+caret ^ and tilde ~    ==> caret upgrades only upto the minor versions of upgrades wheather tilde upgrades it up to the major versions. So there is better to keep caret before verion description so that it may cause problems when major updates were been installed.
+
+$Igniting app ---> npx parcel index.html
+# package.json file is a configuration for npm (a package manager not node package manager)
+#package.lock.json file is a configuration for npm whick keeps track of the exact version of the packages which are been installed because of caret ^ or tilde is there.
+# bundler - a bundler basically packages your app so that is can be moved to the production(webpack, parcel, vite) asap.....
+#parcel -
+1.Dev built
+2.Local Server
+3.HMR = Hot module Replacement
+4. File watching algo written in c++
+5.Faster Build by doing caching
+6. Image optimisation
+7. Minifies our files
+8.Bundling files
+9.Compressing files
+10.Consistent Hashing
+11.Differential Bundling- support older browsers
+12.Code Splitting 
+13.Error Handling -Diagnostics
+14.Tree Shaking Algo-removes unused code
+https://github.com/abhisheksinghmahara/namaste-react
+$Laying foundation
+# two types of dependencies
+1.dev dependencies - required in development
+2.normal dependencies - used also in production
+
+# node module - it is a collection of dependencies which helps in our app creation, making it production ready
+transitive dependencies - if a package is depended on some other dependencies and these dependencies also depends on some another dependencies so this kind of behaviour is called transitive dependencies.
+
+#React elements are nothing just but object. which are created by  -React.CreateElement. Actually React.CreateElement is in the core of  react because when we create elements in react using jsx it automatically calls React.CreateElement.
+React.CreateElement==>creates react element(which is a js object)=>rendered as a html element
+
+# These objects are then taken by ReactDOM library and converts it to html and push it to browser by replacing everything inside the html
+
+# JSX - it is a javascript syntax which is used to create the react elements in easier way. Its a html-like or xml-like syntax [Javascript Xml].
+
+#transpilation- transpilation is a term when a high level language is converted to high level language so that browser can understand it or we can use the latest version and funtions of any language in our project.
+
+#babel is a transpiler in react which is installed as a dependency of parcel bundler
+working==---> JSX(transpiled before it reaches to the browser) by babel inside parcel
+        JSX=> React.CreateElement=> ReactElement=> Html ELement(render)
+
+# React Component= everything inside react is a component wheather it is a button, navbar, list, card etc etc. There are two types of components...
+1. Class base components =components are created using class which can be later extended for more components inside it
+2. Funtion base component -> A react functional component is something which returns a JSX code or react element is a functional component
+//const FuntionalComponent=()=>{
+    return (<h1>Namaste React<h1>);
+}
+
+#component composition--> //when 1 or more components are inside the other components that is called component composition.
+const FunctionalComponent=()=>{
+   return (
+   <><h1>Namaste Funtional component</h1>; 
+    <Title/>
+    </>
+   );
+}
